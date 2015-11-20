@@ -2,7 +2,7 @@ class StaticPagesController < ApplicationController
   def home
   end
 
-  def help
+  def logout
   end
 
   def contact_us

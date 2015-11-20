@@ -11,6 +11,23 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+
+$(document).ready(function() {
+  $('h1').fadeIn(2000);
+});
+
+
+$(document).ready(function() {
+  $('h2').fadeIn(2000);
+});
+
+
+$(document).ready(function() {
+  $('.text-center').fadeIn(2000);
+});
