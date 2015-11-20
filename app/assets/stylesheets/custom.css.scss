@@ -68,7 +68,7 @@ p {
 
 body {
   padding-bottom: 40px;
-  color:#7FFFFFFF;
+  color: #5a5a5a;
 }
 
 .overlay {
@@ -92,13 +92,15 @@ body {
 }
 
 .navbar-wrapper {
-  background: none repeat scroll 0 0 transparent;
+  opacity: 0.8;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
 }
+
+
 
 
 
