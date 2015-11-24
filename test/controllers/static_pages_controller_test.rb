@@ -7,15 +7,15 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_select "title", "Blue Ribbons Review"
   end
 
-  test "should get help" do
-    get :help
-    assert_response :success
-    assert_select "title", "Help | Blue Ribbons Review"
-  end
-
   test "should get contact us page" do
   	get :contact_us
   	assert_response :success
   	assert_select "title", "Contact Us | Blue Ribbons Review"
 end
+
+  test "should get sign up page" do
+    get :new_user_registration_path
+    assert_response :success
+    assert_select "title", "Sign up | Blue Ribbons Review"
+  end
 end

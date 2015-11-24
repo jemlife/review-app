@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks", registrations: 'registrations' }
   get 'users/new'
   root 'static_pages#home'
   get 'logout' => 'static_pages#logout'
   get 'contact_us' => 'static_pages#contact_us'
-  get 'signup' => 'users#new'
+  #get 'sign_up' => 'users#new'
   resources :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
